@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="username" (input)="hasText()" />
+<p>
+  {{ username }}
+</p>
+<button [disabled]="isDisabled" type="button" (click)="clearUsername()">
+  Reset username
+</button>
